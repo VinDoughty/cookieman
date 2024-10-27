@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://ciodvw3hscbcf"]
+
+[ext_resource type="Script" path="res://slime thug.gd" id="1_fjhbi"]
+[ext_resource type="Texture2D" uid="uid://d1a00t7a212xl" path="res://slime thug1.png" id="1_sucu1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_njawl"]
+size = Vector2(89.6877, 1.72102)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_fjhbi")
+
+[node name="SlimeThug1" type="Sprite2D" parent="."]
+texture = ExtResource("1_sucu1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SlimeThug1"]
+
+[node name="Area2D" type="Area2D" parent="SlimeThug1" groups=["boing s"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SlimeThug1/Area2D"]
+position = Vector2(-22, -44)
+rotation = -3.14541
+shape = SubResource("RectangleShape2D_njawl")
+
+[connection signal="area_entered" from="SlimeThug1/Area2D" to="." method="_on_area_2d_area_entered"]

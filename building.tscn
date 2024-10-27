@@ -1,0 +1,62 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjt77y48kvsmm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ci28"]
+size = Vector2(101.05, 89)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 367.0
+offset_bottom = 939.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect"]
+auto_translate_mode = 1
+layout_mode = 0
+offset_left = 34.0
+offset_top = 37.0
+offset_right = 165.0
+offset_bottom = 172.0
+color = Color(1, 1, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect"]
+auto_translate_mode = 1
+layout_mode = 0
+offset_left = 214.0
+offset_top = 37.0
+offset_right = 345.0
+offset_bottom = 172.0
+color = Color(1, 1, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="ColorRect"]
+auto_translate_mode = 1
+layout_mode = 0
+offset_left = 34.0
+offset_top = 240.0
+offset_right = 165.0
+offset_bottom = 375.0
+color = Color(1, 1, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="ColorRect"]
+auto_translate_mode = 1
+layout_mode = 0
+offset_left = 216.0
+offset_top = 237.0
+offset_right = 347.0
+offset_bottom = 372.0
+color = Color(1, 1, 0, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="ColorRect"]
+auto_translate_mode = 1
+layout_mode = 0
+offset_left = 33.0
+offset_top = 466.0
+offset_right = 334.0
+offset_bottom = 601.0
+color = Color(1, 1, 0, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(186, 469.5)
+shape = SubResource("RectangleShape2D_3ci28")

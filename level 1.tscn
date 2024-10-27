@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvqpi056dxlm2"]
+
+[ext_resource type="PackedScene" uid="uid://bh6ikfradxhmn" path="res://player 1.tscn" id="2_6vl8f"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node2D2" parent="." instance=ExtResource("2_6vl8f")]
+position = Vector2(-69, -566)
+scale = Vector2(0.44, 0.400001)
+
+[node name="Camera2D" type="Camera2D" parent="Node2D2"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2

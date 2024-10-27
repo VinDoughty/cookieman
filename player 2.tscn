@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://syfk51vcgouk"]
+
+[ext_resource type="Texture2D" uid="uid://4r7q38s8tq0n" path="res://popcorn man.png" id="1_2seb1"]
+[ext_resource type="Script" path="res://player 2.gd" id="1_lfqqw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8hgd"]
+size = Vector2(169.5, 163.5)
+
+[node name="Node2D" type="CharacterBody2D"]
+script = ExtResource("1_lfqqw")
+
+[node name="CookieMan" type="Sprite2D" parent="."]
+position = Vector2(-7, 3)
+rotation = 0.0521844
+scale = Vector2(0.853659, 0.850282)
+texture = ExtResource("1_2seb1")
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(-114, -27)
+points = PackedVector2Array(78, 80, 78, 118.294, 78, 134)
+width = 2.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Line2D"]
+position = Vector2(0, 14)
+points = PackedVector2Array(78, 118.294, 88.6717, 118.554, 100.369, 118.839, 107, 119)
+width = 2.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="."]
+position = Vector2(-34, -33)
+points = PackedVector2Array(78, 80, 78, 118.294, 78, 134)
+width = 2.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Line2D2"]
+position = Vector2(0, 14)
+points = PackedVector2Array(78, 118.294, 88.6717, 118.554, 100.369, 118.839, 107, 119)
+width = 2.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3.25, 25.25)
+shape = SubResource("RectangleShape2D_s8hgd")

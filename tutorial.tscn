@@ -1,0 +1,85 @@
+[gd_scene load_steps=5 format=3 uid="uid://kj8s8hamqhpt"]
+
+[ext_resource type="PackedScene" uid="uid://c7vwaywqti2gp" path="res://tutorial ground.tscn" id="1_rtws1"]
+[ext_resource type="PackedScene" uid="uid://bh6ikfradxhmn" path="res://player 1.tscn" id="2_wrjm2"]
+[ext_resource type="PackedScene" uid="uid://ciodvw3hscbcf" path="res://slime thug.tscn" id="3_8x73t"]
+[ext_resource type="Texture2D" uid="uid://cipoihgfnp0n" path="res://door.png" id="4_3t8n4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -5733.0
+offset_top = -3415.0
+offset_right = 10769.0
+offset_bottom = 4864.0
+
+[node name="Node2D" parent="." instance=ExtResource("1_rtws1")]
+position = Vector2(-729, -450)
+scale = Vector2(19.9543, 1.44078)
+
+[node name="CollisionShape2D" parent="Node2D/StaticBody2D" index="0"]
+position = Vector2(50.4749, 46.5)
+
+[node name="Node2D2" parent="." instance=ExtResource("2_wrjm2")]
+position = Vector2(-69, -566)
+scale = Vector2(0.44, 0.400001)
+
+[node name="Camera2D" type="Camera2D" parent="Node2D2"]
+
+[node name="Node2D3" parent="." instance=ExtResource("1_rtws1")]
+position = Vector2(921, -553)
+scale = Vector2(3.59241, 2.18965)
+
+[node name="Node2D4" parent="." instance=ExtResource("1_rtws1")]
+position = Vector2(1470, -693)
+scale = Vector2(4.48589, 1.41584)
+
+[node name="Node2D5" parent="." instance=ExtResource("1_rtws1")]
+position = Vector2(2340, -815)
+scale = Vector2(4.48589, 1.41584)
+
+[node name="Node2D6" parent="." instance=ExtResource("1_rtws1")]
+position = Vector2(3376, -891)
+scale = Vector2(4.48589, 1.41584)
+
+[node name="Node2D7" parent="." instance=ExtResource("1_rtws1")]
+position = Vector2(4489, -905)
+scale = Vector2(4.48589, 1.41584)
+
+[node name="Node2D8" parent="." instance=ExtResource("1_rtws1")]
+position = Vector2(4927, -905)
+scale = Vector2(4.48589, 1.41584)
+
+[node name="Node2D9" parent="." instance=ExtResource("1_rtws1")]
+position = Vector2(5377, -905)
+scale = Vector2(4.48589, 1.41584)
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 675.0
+offset_top = -638.0
+offset_right = 810.0
+offset_bottom = -615.0
+scale = Vector2(1.95808, 2.2805)
+text = "Press up to jump."
+
+[node name="Label2" type="Label" parent="."]
+auto_translate_mode = 1
+modulate = Color(0, 0, 0, 1)
+offset_left = 2434.0
+offset_top = -978.0
+offset_right = 2569.0
+offset_bottom = -955.0
+scale = Vector2(1.95808, 2.2805)
+text = "Press x to dash
+"
+
+[node name="Node2D10" parent="." instance=ExtResource("3_8x73t")]
+position = Vector2(5203, -960)
+
+[node name="Door" type="Sprite2D" parent="Node2D10"]
+position = Vector2(508, -194)
+scale = Vector2(2.60163, 2.82203)
+texture = ExtResource("4_3t8n4")
+
+[editable path="Node2D"]

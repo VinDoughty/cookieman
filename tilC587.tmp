@@ -1,0 +1,24 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "tileset 1.tsx": {
+            "dynamicWrapping": true
+        }
+    },
+    "last.imagePath": "C:/Users/vindo/OneDrive/Documents/coockie man and popcorn man",
+    "map.lastUsedFormat": "tmx",
+    "openFiles": [
+    ],
+    "project": "tile 1.tiled-project",
+    "recentFiles": [
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.type": 0
+}

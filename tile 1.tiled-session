@@ -1,0 +1,36 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        ".godot/editor/LEVEL W1L1.tmx": {
+            "scale": 4,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 849.75,
+                "y": 512
+            }
+        },
+        "tileset 1.tsx": {
+            "dynamicWrapping": true
+        }
+    },
+    "last.exportedFilePath": "C:/Users/vindo/OneDrive/Documents/coockie man and popcorn man/.godot/editor",
+    "last.imagePath": "C:/Users/vindo/OneDrive/Documents/coockie man and popcorn man",
+    "lastUsedTilesetExportFilter": "JSON tileset files (*.tsj *.json)",
+    "map.height": 100,
+    "map.lastUsedFormat": "tmx",
+    "map.width": 100,
+    "openFiles": [
+    ],
+    "project": "tile 1.tiled-project",
+    "recentFiles": [
+    ],
+    "tileset.lastUsedFormat": "json",
+    "tileset.type": 0
+}
